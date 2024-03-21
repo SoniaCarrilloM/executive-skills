@@ -6,36 +6,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Grids</title>
     <style>
+
+      body {
+        background: whitesmoke;
+        font-family: sans-serif;
+      }
+
+      header {
+        background-color:antiquewhite;
+        color:grey;
+        border-radius: 30px;
+        text-align: center;
+         padding: 30px;
+        margin: 20px;
+
+      }
+
+      ul {
+        list-style: none;
+      }
+
+      main {
+        background-color:beige;
+        line-height: 2;
+        padding: 30px;
+        margin: 20px;
+      }
       .boxes {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-gap: 20px;
       }
 
       .box {
         background-color: turquoise;
-        color: grey;
-        display: flex;
-        height: 100px;
+        color: white;
         font-size: 24px;
+        padding: 20px;
         border-radius: 8px;
-        align-items: center;
-        justify-content: center;
       }
 
       @media (max-width: 900px) {
         .boxes {
-          grid-template-columns: 1fr;
+          grid-template-columns: 1fr 1fr;
           grid-gap: 10px;
         }
+
+        .box {
+          background: rgb(136, 242, 182);
+        }
       }
+
     </style>
   </head>
   <body>
+    <header>
     <h1>EXECUTIVE SKILLS</h1>
-    <p> <div class="quote">
+    <p> 
 
-      
+    Executive functions (EFs) largely determine your academic success, perhaps even more than intelligence. 
+    This is because EFs assist in exhibiting goal-directed behavior. You can be intelligent, 
+    but if you are distracted by every stimulus or every internal stimulus, 
+    then learning becomes more difficult.
+
+    Types of Executive Skills
+
+    <ul class="types">
+      <li>Starting tasks</li>
+<li>Planning and Prioritizing</li>
+<li>Attention Span and Focus</li>
+<li>Emotion Regulation</li>
+<li>Working Memory</li>
+<li>Inhibition (self-control)</li>
+<li>Self-awareness</li>
+<li>Cognitive Flexibility
+</li>
+
+</header>
+
+<main>
+
+Which score would you give yourself on the above skills?
+<br/>
+
+
+Choose one of the following quotes. Why did you choose it?
+<div class="quotes">
+  
+     
 “Never put off till tomorrow what may be done day after tomorrow just as well.”
 ― Mark Twain
 
@@ -50,40 +108,26 @@
 
 “Never leave till tomorrow that which you can do today.”
 ― Benjamin Franklin
-    </div>
 
-    Executive functions (EFs) largely determine your academic success, perhaps even more than intelligence. 
-    This is because EFs assist in exhibiting goal-directed behavior. You can be intelligent, 
-    but if you are distracted by every stimulus or every internal stimulus, 
-    then learning becomes more difficult.
+</main>
 
-    Types of Executive Skills:
+Look at your score. Make a planning to work on the skills. Every skills has a set of excercises. Hand in your exercises in the available form. 
+<br/>
+</br>
+</div>
 
-    <ul class="types">
-      <li>Starting tasks</li>
-<li>Planning and Prioritizing</li>
-<li>Attention Span and Focus</li>
-<li>Emotion Regulations</li>
-<li>Working Memory</li>
-<li>Inhibition (self-control)</li>
-<li>Self-awareness</li>
-<li>Cognitive Flexibility
-</li>
-    </ul>
-    </p>
+
+  
     <div class="boxes">
-      <div class="box">1</div>
-      <div class="box">2</div>
-      <div class="box">3</div>
-      <div class="box">4</div>
-      <div class="box">5</div>
-      <div class="box">6</div>
-      <div class="box">7</div>
-      <div class="box">8</div>
-      <div class="box">9</div>
-      <div class="box">10</div>
-      <div class="box">11</div>
-      <div class="box">12</div>
-    </div>
+      <div class="box">Starting Tasks</div>
+      <div class="box">Planning and Prioritizing</div>
+      <div class="box">Attention Span and Focus</div>
+      <div class="box">Emotion Regulation</div>
+      <div class="box">Working Memory</div>
+      <div class="box">Inhibition</div>
+      <div class="box">Self-Awareness</div>
+      <div class="box">Cognitive Flexibility</div>
+    
+     </div>
   </body>
 </html>
