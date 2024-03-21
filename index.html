@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grids</title>
+    <style>
+      .boxes {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 20px;
+      }
+
+      .box {
+        background-color: turquoise;
+        color: grey;
+        display: flex;
+        height: 100px;
+        font-size: 24px;
+        border-radius: 8px;
+        align-items: center;
+        justify-content: center;
+      }
+
+      @media (max-width: 900px) {
+        .boxes {
+          grid-template-columns: 1fr;
+          grid-gap: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>EXECUTIEVE VAARDIGHEDEN</h1>
+    <p> <div class="quote"
+
+      
+“Never put off till tomorrow what may be done day after tomorrow just as well.”
+― Mark Twain
+
+“Only put off until tomorrow what you are willing to die having left undone”
+― Pablo Picasso
+
+“Procrastination is the thief of time, collar him.”
+― Charles Dickens, David Copperfield
+
+“You cannot escape the responsibility of tomorrow by evading it today.”
+― Abraham Lincoln
+
+“Never leave till tomorrow that which you can do today.”
+― Benjamin Franklin
+    </div>
+
+    Executive functions (EFs) largely determine your academic success, perhaps even more than intelligence. 
+    This is because EFs assist in exhibiting goal-directed behavior. You can be intelligent, 
+    but if you are distracted by every stimulus or every internal stimulus, 
+    then learning becomes more difficult.
+
+    Types of Executive Skills:
+
+    <ul class="types">
+      <li>Starting tasks</li>
+<li>Planning and Prioritizing</li>
+<li>Attention Span and Focus</li>
+<li>Emotion Regulations</li>
+<li>Working Memory</li>
+<li>Inhibition (self-control)</li>
+<li>Self-awareness</li>
+<li>Cognitive Flexibility
+</li>
+    </ul>
+    </p>
+    <div class="boxes">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+      <div class="box">6</div>
+      <div class="box">7</div>
+      <div class="box">8</div>
+      <div class="box">9</div>
+      <div class="box">10</div>
+      <div class="box">11</div>
+      <div class="box">12</div>
+    </div>
+  </body>
+</html>
