@@ -27,18 +27,18 @@ header {
 
 header h1 {
   background: whitesmoke;
-  color: orangered;
+  color: rgb(93, 132, 215);
   text-align: center;
   border-radius: 15px;
   margin-bottom: 25%;
-  border: 2px solid orangered;
+  border: 2px solid rgb(93, 132, 215);
   padding: 10px O;
   
 }
 header h2{
   font-size: 15px;
   color: white;
-  background: orangered;
+  background: rgb(144, 227, 214);
   border-radius: 15px;
   border: 2px solid white;
   padding: 10px;
@@ -58,7 +58,7 @@ ul {
 
 
 main {
-  color: orangered;
+  color: rgb(93, 132, 215);
   line-height: 2;
   padding: 30px;
   margin: 20px;
@@ -70,17 +70,22 @@ main h2 {
 .boxes {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 20px;
+  grid-gap: 10px;
 }
 
 .box {
   background-color: turquoise;
+  opacity: 0.5;
   color: white;
   font-size: 24px;
   padding: 20px;
   border-radius: 8px;
 }
 
+
+
+
+}
 @media (max-width: 900px) {
   .boxes {
     grid-template-columns: 1fr 1fr;
@@ -117,14 +122,14 @@ img {
 .card {
   background: white;
   color: grey;
-  margin: 30px 0;
+  margin: 20px 0;
   border-radius: 15px;
   padding: 30px;
   border: 2px solid rgb(93, 132, 215);
 }
 
 .card-body {
-  padding: 30px;
+  padding: 20px;
   color:grey;
   
 }
@@ -154,12 +159,15 @@ section {
   margin: 0 auto;
   padding: 100px;
   background: rgb(144, 227, 214);
+  opacity: 0.7;
   border-radius: 15px;
-  margin-bottom: 10%;
-
-  
+    
 }
 
+section p {
+  text-align: center;
+  color:  rgb(93, 132, 215);
+}
   
 section h2 {
   color:rgb(93, 132, 215);
@@ -178,19 +186,20 @@ footer h3 {
   font-weight: 700;
   font-size: 20px;
   line-height: 30px;
+  text-align: left;
 }
 
 footer p {
   font-weight: 400;
   font-size: 16px;
   opacity: 0.7;
-  margin-right: 20px;
+  margin-left: 20px;
   line-height: 24px;
 }
 
 footer ul {
   padding: 0;
-  line-height: 2;
+  line-height: 1;
 }
 
 footer li {
@@ -200,10 +209,17 @@ footer li {
 }
 
 footer a {
-  color: rgb(142, 247, 142)
+  color: blue;
   opacity(0.7);
 }
 
+
+.gridFooter {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 10%;
+  
+}
 @media (max-width: 960px) {
   header {
     padding: 60px 0;
@@ -257,7 +273,7 @@ Benjamin Franklin</h2>
 </main>
 <section>
 
-         <h2 class="text-center">Before we start ... </h2>
+         <h2>Before we start ... </h2>
           
 
           <div class="grid grid-2-columns">
@@ -341,7 +357,10 @@ Do you want to commit to the hard work that improving yourself entails?
 
 </div>
 
- 
+ <h2>Train your Executive skills</h2>
+ <p>
+  In this section you can learn more about each executive skill and do some exercises to improve them.
+ </p>
     <div class="boxes">
       <div class="box">Starting Tasks
   
@@ -367,53 +386,41 @@ Do you want to commit to the hard work that improving yourself entails?
     </section>
      
       <footer>
-        <section class="grid">
+        <section class="gridFooter">
           <div>
-            <h3>Recommended Sources </h3>
-
-            <ul>
-              <li> Seven Habits of Highly Effective Teens, by Steven Covey
-                <br/>
-                <a
+            <h3>Further Reading</h3>
+            
+          
+                            <a
                   href="https://www.goodreads.com/book/show/783127.The_7_Habits_of_Highly_Effective_Teens"
-                  target="_blank">    Seven Habits of Highly Effective Teens                             
-                </a>
-              </li>
-              <li> Atomic Habits, by James Clear
-                <br/>
+                  target="_blank">Seven Habits of Highly Effective Teens                          
+          </a>
+            
+                        
                 <a href="https://jamesclear.com/atomic-habits" target="_blank"> Atomic Habits
                   
                 </a> 
-              </li>
-              <li>
-                <a
-                  href=""
-                  target="_blank"
-                >
-                  
-                </a>
-              </li>
-            </ul>
+              
           </div>
           <div>
             <h3>About me</h3>
-            <p>
-              Hi! My name is Sonia Carrillo. I am a high school teacher and psychologist-coach. I am passionate about helping people reach their next level. 
-                          </p>
+            
+            My name is Sonia Carrillo. I am a high school teacher and psychologist-coach. I am passionate about helping people reach their next level. 
+                          
           </div>
           <div>
             <h3>About this website</h3>
-            <p>
-              I created this page as in order to help students who want to improve their executive skills 
+            
+              I created this page as in order to help students reach their full potential
               <br />
-              This project was coded Sonia Carrillo and is
+              This project was coded Sonia Carrillo and is open-sourced on 
               <a
                 href="https://github.com/SoniaCarrilloM/executive-skills"
                 target="_blank"
               >
-                open sourced</a
+                GitHub </a
               >
-            </p>
+            
           </div>
         </section>
       </footer>
