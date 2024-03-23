@@ -14,25 +14,58 @@
 }
 
 header {
-  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/112/981/original/DOnkey_Sonia_with_my_Apple.jpg?1706628660");
-  color: white;
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/112/978/original/Donkeys_watching_.jpg?1706628358");
+  color: orangered;
+  font-size: 20px;
   background-repeat: no-repeat;
   background-size: cover;
-  text-align: center;
   border-radius: 30px;
-  text-align: center;
-  padding: 300px;
+  padding: 50px;
+  
+
 }
 
+header h1 {
+  background: whitesmoke;
+  color: orangered;
+  text-align: center;
+  border-radius: 15px;
+  margin-bottom: 25%;
+  border: 2px solid orangered;
+  padding: 10px O;
+  
+}
+header h2{
+  font-size: 15px;
+  color: white;
+  background: orangered;
+  border-radius: 15px;
+  border: 2px solid white;
+  padding: 10px;
+  text-align: center;
+  margin-top: 35%;
+   
+
+}
 ul {
   list-style: none;
+  display: inline-flex;
+  line-height: 1;
+  background:rgb(144, 227, 214);
+  padding: 30px;
+  border-radius: 15px;
 }
 
+
 main {
-  background-color: beige;
+  color: orangered;
   line-height: 2;
   padding: 30px;
   margin: 20px;
+}
+
+main h2 {
+  text-align: center;
 }
 .boxes {
   display: grid;
@@ -75,19 +108,70 @@ img {
 
 .grid {
   display: grid;
-  grid-template-columns: 2fr 1fr 2fr;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+}
+
+
+
+.card {
+  background: white;
+  color: grey;
+  margin: 30px 0;
+  border-radius: 15px;
+  padding: 30px;
+  border: 2px solid rgb(93, 132, 215);
+}
+
+.card-body {
+  padding: 30px;
+  color:grey;
+  
+}
+
+.card-footer {
+  padding: 0 30px 30px;
+}
+
+.btn {
+  display: block;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 16px;
+  background-color: rgb(93, 132, 215);
+  text-decoration: none;
+  border: 2px solid rgb(142, 247, 142);
+  border-radius: 15px;
 }
 
 section {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
+  padding: 100px;
+  background: rgb(144, 227, 214);
+  border-radius: 15px;
+  margin-bottom: 10%;
+
+  
 }
+
+  
+section h2 {
+  color:rgb(93, 132, 215);
+  text-align: center;
+}
+
 footer {
-  background-color:antiquewhite;
   color: grey;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 100px 0;
+  padding: 100px;
+
 }
 
 footer h3 {
@@ -106,6 +190,7 @@ footer p {
 
 footer ul {
   padding: 0;
+  line-height: 2;
 }
 
 footer li {
@@ -116,7 +201,7 @@ footer li {
 
 footer a {
   color: rgb(142, 247, 142)
-  opacity: 0.7;
+  opacity(0.7);
 }
 
 @media (max-width: 960px) {
@@ -142,19 +227,21 @@ footer a {
   <body>
     <header>
     <h1>EXECUTIVE SKILLS</h1>
-    <p> 
+    <h2>“Never leave till tomorrow that which you can do today.”
+Benjamin Franklin</h2>
+ 
+
+</header>
+
+<main>
+    <h2>
 
     Executive functions (EFs) largely determine your academic success, perhaps even more than intelligence. 
     This is because EFs assist in exhibiting goal-directed behavior. You can be intelligent, 
     but if you are distracted by every stimulus or every internal stimulus, 
-    then learning becomes more difficult.
+    then learning becomes more difficult. </h2>
 
-    <br/>
-    <br/>
-<a href="#learn">Learn More</a>
-<br/>
-
-    Types of Executive Skills
+  <h2>Types of Executive Skills</h2>
 
     <ul class="types">
       <li>Starting tasks</li>
@@ -166,44 +253,95 @@ footer a {
 <li>Self-awareness</li>
 <li>Cognitive Flexibility
 </li>
-
-</header>
-
-<main>
-
-
-Which score would you give yourself on the above skills?
-<br/>
-
-
-Choose one of the following quotes. Why did you choose it?
-<div class="quotes">
-  
-     
-“Never put off till tomorrow what may be done day after tomorrow just as well.”
-― Mark Twain
-
-“Only put off until tomorrow what you are willing to die having left undone”
-― Pablo Picasso
-
-“Procrastination is the thief of time, collar him.”
-― Charles Dickens, David Copperfield
-
-“You cannot escape the responsibility of tomorrow by evading it today.”
-― Abraham Lincoln
-
-“Never leave till tomorrow that which you can do today.”
-― Benjamin Franklin
-
+</ul>
 </main>
+<section>
 
-Look at your score. Make a planning to work on the skills. Every skills has a set of excercises. Hand in your exercises in the available form. 
-<br/>
-</br>
+         <h2 class="text-center">Before we start ... </h2>
+          
+
+          <div class="grid grid-2-columns">
+            <div class="card">
+              <div class="card-header">
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/113/299/original/IMG-20181020-WA0004.jpg?1706815004"
+                  alt=""
+                  class="img-responsive"
+                />
+              </div>
+
+              <div class="card-body">
+                <h4>Analyze your Executive Skills</h4>
+                <p>Go through the types of executive skills listed above. What are you good at? What would you like to improve? Rank yourself. 
+                               </p>
+
+                <h5>Rank your skills. Make a list, setting your best skill at the top and the one you need to improve most at the bottom of your list</h5>
+                <form action="/submit">
+               <label for="name">Enter your name: </label>
+               <input type="text" placeholder="My best skill is ... my second best is ..."our name" name="name" id="name" required />
+               <input type="submit" value="Submit" />
+              </form>
+                <p>
+                  It is important to self-reflect and periodically assess your executive skills, identify strengths, and recognize areas for growth to create a balanced skill set. Continuous improvement 
+                  in executive skills can contribute to achieving long-term goals and adapting to various challenges in life. 
+                  Self-reflection is very important if you want to reach your full potential. 
+                  Click below to learn more about self-reflection. 
+                </p>
+              </div>
+              <div class="card-footer">
+                <a
+                  href="https://www.trackinghappiness.com/how-to-reflect-on-yourself-for-self-awareness/"
+                  class="btn"
+                  target="_blank"
+                >
+                  Self-Reflection
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/113/296/original/IMG-20180929-WA0007.jpg?1706814891"
+                  alt=""
+                  class="img-responsive"
+                />
+              </div>
+
+              <div class="card-body">
+                <h4>Do you want to change? </h4>
+                <p>
+                  Now that you have assessed your executive skills, it is important that you reflect on whether you want to improve the ones you could be better at. 
+Do you want to commit to the hard work that improving yourself entails?
+                </p>
+
+
+                
+                   <h5>Write a short text in which you explain why you want to/do not want to change. Explain your choice. Explain experiences you have had in the past to support your argument. </h5>
+                <form action="/submit">
+               <label for="name">Enter your name: </label>
+               <input type="text" placeholder="I DO/DO NOT want to commit to improve myself because ..." name="name" id="name" required />
+               <input type="submit" value="Submit" />
+              </form>
+                <p>
+                  This training is about you. Only you can make the change. If you are not willing to do so, it is better that you realize this before the training strarts. 
+                 
+                Click here to learn more about the importance of commitment when it comes to improving yourself. 
+                </p>
+              </div>
+              <div class="card-footer">
+                <a
+                  href="https://upjourney.com/why-is-commitment-important"
+                  class="btn"
+                  target="_blank"
+                >
+                  Commitment 
+                </a>
+              </div>
+            </div>
+
 </div>
 
-
-  
+ 
     <div class="boxes">
       <div class="box">Starting Tasks
   
@@ -226,7 +364,7 @@ Look at your score. Make a planning to work on the skills. Every skills has a se
     
      </div>
 
-
+    </section>
      
       <footer>
         <section class="grid">
