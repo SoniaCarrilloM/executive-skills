@@ -71,6 +71,77 @@ img {
   border: 2px solid pink;
 }
 
+
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+footer {
+  color: white;
+  background-image: linear-gradient(
+      rgba(39, 32, 68, 0.9),
+      rgba(39, 32, 68, 0.9)
+    ),
+    url("../images/lisbon-footer.png");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+}
+
+footer h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+footer p {
+  font-weight: 400;
+  font-size: 16px;
+  opacity: 0.7;
+  margin-right: 20px;
+  line-height: 24px;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer a {
+  color: white;
+  opacity: 0.7;
+}
+
+@media (max-width: 960px) {
+  header {
+    padding: 60px 0;
+  }
+
+  header h1 {
+    font-size: 48px;
+  }
+
+  header h2 {
+    font-size: 20px;
+  }
+
+  header h3 {
+    font-size: 12px;
+  }
+}
+
     </style>
   </head>
   <body>
@@ -150,5 +221,60 @@ Look at your score. Make a planning to work on the skills. Every skills has a se
       <div class="box">Cognitive Flexibility</div>
     
      </div>
+
+
+     
+      <footer>
+        <section class="grid">
+          <div>
+            <h3>Recommended Sources </h3>
+
+            <ul>
+              <li> Seven Habits of Highly Effective Teens, by Steven Covey
+                <a
+                  href="https://www.goodreads.com/book/show/783127.The_7_Habits_of_Highly_Effective_Teens"
+                  target="_blank"
+                >
+                  
+                </a>
+              </li>
+              <li>
+                <a href="" target="_blank">
+                  
+                </a>
+              </li>
+              <li>
+                <a
+                  href=""
+                  target="_blank"
+                >
+                  
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3>About me</h3>
+            <p>
+              Hi! My name is Sonia Carrillo. I am a high school teacher and a remedial teacher/coach. I have a background in psychology and I am passionate about helping people reach their next level. 
+                          </p>
+          </div>
+          <div>
+            <h3>About this website</h3>
+            <p>
+              I created this page as in order to help students who want to improve their executive skills 
+              <br />
+              This project was coded Sonia Carrillo and is
+              <a
+                href="https://github.com/SoniaCarrilloM/executive-skills"
+                target="_blank"
+              >
+                open sourced</a
+              >
+            </p>
+          </div>
+        </section>
+      </footer>
+    </div>
   </body>
 </html>
