@@ -4,69 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" href="src/styles.css" />
     <title>CSS Grids</title>
-    <style>
-
-      body {
-        background: whitesmoke;
-        font-family: sans-serif;
-        line-height: 2;
-      }
-
-      header {
-        background-color:antiquewhite;
-        color:grey;
-        border-radius: 30px;
-        text-align: center;
-         padding: 30px;
-        margin: 20px;
-
-      }
-
-      ul {
-        list-style: none;
-      }
-
-      main {
-        background-color:beige;
-        line-height: 2;
-        padding: 30px;
-        margin: 20px;
-      }
-      .boxes {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-gap: 20px;
-      }
-
-      .box {
-        background-color: turquoise;
-        color: white;
-        font-size: 24px;
-        padding: 20px;
-        border-radius: 8px;
-      }
-
-      @media (max-width: 900px) {
-        .boxes {
-          grid-template-columns: 1fr 1fr;
-          grid-gap: 10px;
-        }
-
-        .box {
-          background: rgb(136, 242, 182);
-        }
-      }
-
-      img {
-        filter: hue-rotate (268deg) sepia (100%) saturate (300%);
-        display: flex;
-        width: 15%;
-        border-radius: 30px;
-        border: 2px solid pink;
-      }
-
-    </style>
   </head>
   <body>
     <header>
