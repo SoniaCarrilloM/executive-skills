@@ -8,7 +8,6 @@ header {
   background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/120/480/original/20161124_122608.jpg?1711269519");
   filter: brightness(100%) contrast(102%) hue-rotate(14deg) saturate(200%)
     sepia(48%);
-  color: orangered;
   font-size: 20px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -16,8 +15,7 @@ header {
   padding: 50px;
 }
 header h1 {
-  background: whitesmoke;
-  color: rgb(93, 132, 215);
+  color: purple;
   text-align: center;
   border-radius: 15px;
   margin-bottom: 25%;
@@ -25,14 +23,30 @@ header h1 {
   padding: 10px O;
 }
 header h2 {
-  font-size: 15px;
-  color: rgb(93, 132, 215);
-  background: rgb(144, 227, 214);
+  font-size: 25px;
+  color: purple;
   border-radius: 15px;
-  border: 2px solid white;
-  padding: 10px;
   text-align: center;
   margin-top: 35%;
+}
+
+header h3 {
+  font-size: 25px;
+  color: purple;
+  border-radius: 15px;
+  text-align: center;
+  margin-top: 35%;
+}
+
+.headerTypes {
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/120/547/original/20161124_122800.jpg?1711299674");
+  filter: brightness(100%) contrast(102%) hue-rotate(14deg) saturate(200%)
+    sepia(48%);
+  font-size: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+  padding: 50px;
 }
 .types {
   list-style: none;
@@ -150,6 +164,11 @@ section h1 {
 section h3 {
   color: rgb(93, 132, 215);
   text-align: center;
+}
+
+section h5 {
+  color: blueviolet;
+  font-style: italic;
 }
 footer {
   color: grey;
