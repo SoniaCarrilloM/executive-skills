@@ -142,6 +142,12 @@ section h1 {
   text-align: center;
   border: 2px solid whitesmoke;
   border-radius: 10px;
+  border: 1px solid blueviolet;
+}
+
+section h3 {
+  color: rgb(93, 132, 215);
+  text-align: center;
 }
 footer {
   color: grey;
@@ -200,6 +206,9 @@ footer a {
   background-color: aquamarine;
   color: bisque;
   padding: 30 auto;
+  border-radius: 10px;
+  border: 1px solid blueviolet;
+  text-align: center;
 }
 
 .learn {
