@@ -234,6 +234,14 @@ link {
   padding: 30px;
   color: white;
 }
+
+th {
+  color: blueviolet;
+  font-weight: bold;
+}
+td {
+  border-top: 1px solid red;
+}
 @media (max-width: 900px) {
   header {
     padding: 60px 0;
@@ -291,5 +299,9 @@ link {
   .nav {
     display: grid;
     padding-left: 10px;
+  }
+
+  .tableEva {
+    overflow-x: auto;
   }
 }
