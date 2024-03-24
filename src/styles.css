@@ -1,5 +1,4 @@
-
-     body {
+body {
   background: whitesmoke;
   font-family: sans-serif;
   line-height: 2;
@@ -7,15 +6,14 @@
 
 header {
   background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/120/480/original/20161124_122608.jpg?1711269519");
-  filter:  brightness(100%) contrast(102%) hue-rotate(14deg) saturate(200%) sepia(48%);
+  filter: brightness(100%) contrast(102%) hue-rotate(14deg) saturate(200%)
+    sepia(48%);
   color: orangered;
   font-size: 20px;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 30px;
   padding: 50px;
-  
-
 }
 header h1 {
   background: whitesmoke;
@@ -25,9 +23,8 @@ header h1 {
   margin-bottom: 25%;
   border: 2px solid rgb(93, 132, 215);
   padding: 10px O;
-  
 }
-header h2{
+header h2 {
   font-size: 15px;
   color: rgb(93, 132, 215);
   background: rgb(144, 227, 214);
@@ -36,18 +33,15 @@ header h2{
   padding: 10px;
   text-align: center;
   margin-top: 35%;
-   
-
 }
 ul {
   list-style: none;
   display: inline-flex;
   line-height: 1;
-  background:rgb(144, 227, 214);
+  background: rgb(144, 227, 214);
   padding: 30px;
   border-radius: 15px;
 }
-
 
 main {
   color: rgb(93, 132, 215);
@@ -60,11 +54,6 @@ main h2 {
   text-align: center;
 }
 
-@media (max-width: 900px);
-.types {
-  display:list-item;
-  text-align: center;
-}
 .boxes {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -74,29 +63,11 @@ main h2 {
 .box {
   background-color: turquoise;
   opacity: 0.5;
-  color: white;
+  color: blueviolet;
+  font-weight: bold;
   font-size: 24px;
   padding: 20px;
   border-radius: 8px;
-}
-
-
-
-
-
-@media (max-width: 900px) {
-  .boxes {
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
-  }
-
-  .box {
-    background: rgb(136, 242, 182);
-  }
-
-  header {
-    padding: 60px 0;
-  }
 }
 
 img {
@@ -107,15 +78,11 @@ img {
   border: 2px solid pink;
 }
 
-
-
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 10px;
 }
-
-
 
 .card {
   background: white;
@@ -128,8 +95,7 @@ img {
 
 .card-body {
   padding: 20px;
-  color:grey;
-  
+  color: grey;
 }
 
 .card-footer {
@@ -158,16 +124,15 @@ section {
   padding: 100px;
   background: rgb(144, 227, 214);
   border-radius: 15px;
-    
 }
 
 section h4 {
   text-align: center;
-  color:  rgb(93, 132, 215);
+  color: rgb(93, 132, 215);
 }
-  
+
 section h2 {
-  color:rgb(93, 132, 215);
+  color: rgb(93, 132, 215);
   text-align: center;
 }
 
@@ -176,14 +141,13 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 100px;
-
 }
 
 footer h3 {
   font-weight: 700;
   font-size: 20px;
   line-height: 30px;
-  text-align: left;
+  text-align: center;
 }
 
 footer p {
@@ -207,17 +171,21 @@ footer li {
 
 footer a {
   color: blue;
-  opacity(0.7);
+  opacity: (0.7);
 }
-
 
 .gridFooter {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 10%;
-  
+  text-align: center;
+  padding: 0;
 }
-@media (max-width: 960px) {
+
+.link {
+  font-size: smaller;
+}
+@media (max-width: 900px) {
   header {
     padding: 60px 0;
   }
@@ -233,6 +201,40 @@ footer a {
   header h3 {
     font-size: 12px;
   }
-}
 
-    </style>
+  .section {
+    background-color: pink;
+  }
+
+  .boxes {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    background: none;
+    padding: 5px;
+    font-size: 15px;
+    justify-content: center;
+  }
+
+  .box {
+    background-color: whitesmoke;
+    column-gap: 10%;
+  }
+
+  header {
+    padding: 60px 0;
+  }
+
+  .types {
+    display: list-item;
+    text-align: center;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+
+  .gridFooter {
+    grid-template-columns: 1fr;
+  }
+}
