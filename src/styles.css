@@ -179,7 +179,7 @@ footer a {
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 10%;
   text-align: center;
-  padding: 0;
+  padding: 30px;
 }
 
 .link {
@@ -236,5 +236,6 @@ footer a {
 
   .gridFooter {
     grid-template-columns: 1fr;
+    padding: 5px;
   }
 }
