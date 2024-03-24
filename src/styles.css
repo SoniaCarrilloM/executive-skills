@@ -185,13 +185,18 @@ footer a {
 .link {
   font-size: smaller;
 }
+
+.nav {
+  background-color: aquamarine;
+  color: bisque;
+}
 @media (max-width: 900px) {
   header {
     padding: 60px 0;
   }
 
   header h1 {
-    font-size: 48px;
+    font-size: 20px;
   }
 
   header h2 {
@@ -237,5 +242,10 @@ footer a {
   .gridFooter {
     grid-template-columns: 1fr;
     padding: 5px;
+  }
+
+  .nav {
+    display: grid;
+    padding-left: 10px;
   }
 }
