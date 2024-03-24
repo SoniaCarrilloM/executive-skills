@@ -136,6 +136,13 @@ section h2 {
   text-align: center;
 }
 
+section h1 {
+  background-color: white;
+  color: rgb(93, 132, 215);
+  text-align: center;
+  border: 2px solid whitesmoke;
+  border-radius: 10px;
+}
 footer {
   color: grey;
   background-repeat: no-repeat;
@@ -143,6 +150,9 @@ footer {
   padding: 100px;
 }
 
+footer h1 {
+  text-align: center;
+}
 footer h3 {
   font-weight: 700;
   font-size: 20px;
