@@ -34,7 +34,7 @@ header h2 {
   text-align: center;
   margin-top: 35%;
 }
-ul {
+.types {
   list-style: none;
   display: inline-flex;
   line-height: 1;
@@ -123,6 +123,7 @@ section {
   margin: 0 auto;
   padding: 100px;
   background: rgb(144, 227, 214);
+  opacity: 0.7;
   border-radius: 15px;
 }
 
@@ -137,12 +138,13 @@ section h2 {
 }
 
 section h1 {
-  background-color: white;
-  color: rgb(93, 132, 215);
+  background-color: blueviolet;
+  opacity: 0.7;
+  color: whitesmoke;
   text-align: center;
   border: 2px solid whitesmoke;
   border-radius: 10px;
-  border: 1px solid blueviolet;
+  border: 1px solid whitesmoke;
 }
 
 section h3 {
@@ -203,7 +205,7 @@ footer a {
 }
 
 .nav {
-  background-color: aquamarine;
+  background-color: rgb(93, 132, 215);
   color: bisque;
   padding: 30 auto;
   border-radius: 10px;
@@ -244,13 +246,48 @@ link {
   color: white;
 }
 
+table {
+  border: 1px solid lightgrey;
+  width: 100%;
+}
+
+td {
+  border-top: 1px solid lightgray;
+}
+
 th {
   color: blueviolet;
   font-weight: bold;
 }
-td {
-  border-top: 1px solid red;
+
+.key {
+  font-weight: bold;
 }
+
+.embed-responsive {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: block;
+  aspect-ratio: 21 / 9;
+}
+
+td {
+  border-top: 1px solid lightgray;
+  height: 70%;
+}
+
+.procast {
+  overflow-x: auto;
+  border: 1px solid lightgrey;
+  width: 100%;
+}
+
+thead {
+  font-size: smaller;
+  height: 70%;
+}
+
 @media (max-width: 900px) {
   header {
     padding: 60px 0;
@@ -311,6 +348,9 @@ td {
   }
 
   .tableEva {
+    overflow-x: auto;
+  }
+  .responsive-table {
     overflow-x: auto;
   }
 }
