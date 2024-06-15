@@ -16,6 +16,7 @@ header {
 }
 header h1 {
   color: purple;
+  background: rgb(144, 227, 214);
   text-align: center;
   border-radius: 15px;
   margin-bottom: 25%;
