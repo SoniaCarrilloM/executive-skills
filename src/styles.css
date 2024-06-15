@@ -362,6 +362,9 @@ thead {
     display: list-item;
     text-align: center;
   }
+
+  .footer {
+    background: none;
   }
   .grid {
     grid-template-columns: 1fr;
