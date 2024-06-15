@@ -371,6 +371,9 @@ thead {
   .gridFooter {
     grid-template-columns: 1fr;
     padding: 5px;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
   .nav {
