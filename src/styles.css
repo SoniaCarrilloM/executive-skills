@@ -225,10 +225,11 @@ footer a {
 }
 
 .nav {
-  background-color: rgb(144, 227, 214);
-  color: grey;
+  background-color: rgb(93, 132, 215);
+  color: bisque;
+  padding: 30 auto;
   border-radius: 10px;
-  border: 1px solid grey;
+  border: 1px solid blueviolet;
   text-align: center;
 }
 
