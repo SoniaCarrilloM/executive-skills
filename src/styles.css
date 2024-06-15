@@ -233,6 +233,10 @@ footer a {
   text-align: center;
 }
 
+.btn-group {
+  background-color: rgb(93, 132, 215);
+}
+
 .learn {
   background-color: rgb(93, 132, 215);
   border: 2 solid rgb(93, 132, 215);
