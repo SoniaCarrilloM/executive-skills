@@ -362,16 +362,11 @@ thead {
     display: list-item;
     text-align: center;
   }
-
-  .footer {
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 5%;
-    margin-bottom: 5%;
   }
   .grid {
     grid-template-columns: 1fr;
     justify-content: center;
+    padding: 15px auto;
   }
 
   .gridFooter {
