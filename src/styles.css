@@ -227,14 +227,10 @@ footer a {
 .nav {
   background-color: rgb(144, 227, 214);
   color: grey;
-  padding: 15 auto;
+  padding: 0;
   border-radius: 10px;
   border: 1px solid grey;
   text-align: center;
-}
-
-.nav-link {
-  background-color: rgb(142, 247, 142);
 }
 
 .learn {
