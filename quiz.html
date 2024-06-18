@@ -18,6 +18,7 @@
             font-family: Arial, sans-serif;
             background-color: #00ffef; /* Turquoise background */
             color: #ffffff; /* White text */
+            font-weight: bolder;
         }
 
         h1 {
@@ -26,10 +27,11 @@
         }
 
         .question {
-            background-color: #0080ff; /* Blue question background */
+            background-color: rgb(169, 169, 243); /* Blue question background */
             padding: 20px;
             margin-bottom: 20px;
             border-radius: 10px;
+            
         }
 
         .question p {
@@ -59,6 +61,16 @@
         button:hover {
             background-color: #005cbf; /* Darker blue on hover */
         }
+
+        .results {
+          background-color: rgb(169, 169, 243);
+          justify-content: center;
+          margin-right: 25%;
+          margin-left: 25%;
+          padding: 20px;
+          line-height: 2;
+          border-radius: 5px;
+        }
     </style>
 
   <body>
@@ -82,10 +94,11 @@
   <a class="nav-link disabled" aria-disabled="true"></a>
 </nav>
 
-<body>
     <h1>Multiple Choice Quiz</h1>
     <p>Each question corresponds to a specific executive skill. Match the task with
   the correct skill.</p>
+  
+    <div id="quiz-container">
     <div class="question">
         <p>1. Task: You need to create a study
   schedule for your upcoming exams.?</p>
@@ -96,14 +109,78 @@
         <label><input type="radio" name="q1" value="d"> d) Flexibility
         </label>
     </div>
-    <!-- Repeat similar blocks for other questions -->
-    <button onclick="checkAnswers()">Submit</button>
+  </br>
+    <div class="question">
+        <p>2. Task: You have a project due in two weeks. What steps will you take each day to complete it on time.</p>
+        <label><input type="radio" name="q1" value="a"> a) Planning and Organization</label>
+        <label><input type="radio" name="q1" value="b"> b) Time
+  Management</label>
+        <label><input type="radio" name="q1" value="c"> c) Working Memory</label>
+        <label><input type="radio" name="q1" value="d"> d) Self-Monitoring
+        </label>
+    </div>
+  </br>
+     <div class="question">
+        <p>3. Task: Remembering your locker combination without writing it down.</p>
+        <label><input type="radio" name="q1" value="a"> a) Flexibility</label>
+        <label><input type="radio" name="q1" value="b"> b) Emotional Regulation</label>
+        <label><input type="radio" name="q1" value="c"> c) Working Memory</label>
+        <label><input type="radio" name="q1" value="d"> d) Time management
+        </label>
+    </div>
+  </br>
+         <div class="question">
+        <p>4. Task: Checking your work to make sure you haven’t made any mistakes.</p>
+        <label><input type="radio" name="q1" value="a"> a) Emotional Regulation</label>
+        <label><input type="radio" name="q1" value="b"> b) Flexibility</label>
+        <label><input type="radio" name="q1" value="c"> c) Time management</label>
+        <label><input type="radio" name="q1" value="d"> d) Self-Monitoring
+        </label>
+    </div>
+  </br>
+        <div class="question">
+        <p>5. Task: Taking deep breaths and counting to ten when you feel angry or upset.</p>
+        <label><input type="radio" name="q1" value="a"> a) Flexibility</label>
+        <label><input type="radio" name="q1" value="b"> b) Emotional Regulation</label>
+        <label><input type="radio" name="q1" value="c"> c) Working Memory</label>
+        <label><input type="radio" name="q1" value="d"> d) Planning and Organization
+        </label>
+    </div>
+  </br>
+    <div class="question">
+        <p>6. Task: Changing your plans when something unexpected happens.</p>
+        <label><input type="radio" name="q1" value="a"> a) Time Management</label>
+        <label><input type="radio" name="q1" value="b"> b) Self-Monitoring</label>
+        <label><input type="radio" name="q1" value="c"> c) Flexibility</label>
+        <label><input type="radio" name="q1" value="d"> d) Emotional Regulation
+        </label>
+    </div>
+  </br>
+    <div class="question">
+        <p>7. Task: Not interrupting someone while they’re speaking.</p>
+        <label><input type="radio" name="q1" value="a"> a) Working Memory</label>
+        <label><input type="radio" name="q1" value="b"> b) Self-Monitoring</label>
+        <label><input type="radio" name="q1" value="c"> c) Emotional Regulation</label>
+        <label><input type="radio" name="q1" value="d"> d) Response Inhibition
+        </label>
+    </div>
+  </br>
+ <div class="question">
+        <p>8. Task: Starting your homework as soon as you get home from school.</p>
+        <label><input type="radio" name="q1" value="a"> a) Task Initiation</label>
+        <label><input type="radio" name="q1" value="b"> b) Planning and Organization</label>
+        <label><input type="radio" name="q1" value="c"> c) Time Management</label>
+        <label><input type="radio" name="q1" value="d"> d) Working Memory
+        </label>
+    </div>
+  </br>
+      <button onclick="checkAnswers()">Submit</button>
+    <div id="result"></div>
+
  <script>
         function checkAnswers() {
             const correctAnswers = {
-                q1: 'a', // Correct answer for question 1
-                // Add correct answers for other questions
-            };
+                q1: 'a', q2: 'b', q3: 'c', q4: 'd', q5: 'b', q6: 'c', q7: 'd', q8: 'a'};
 
             const userAnswers = {};
             const questions = document.querySelectorAll('.question');
@@ -115,35 +192,28 @@
                 }
             });
 
-            let score = 0;
+            let correctCount = 0;
+            let resultHtml = '<h2>Results:</h2>';
+
             for (const question in correctAnswers) {
                 if (userAnswers[question] === correctAnswers[question]) {
-                    score++;
+                    correctCount++;
+                    resultHtml += `<p>Question ${question.slice(1)}: Correct!</p>`;
+                } else {
+                    resultHtml += `<p>Question ${question.slice(1)}: Incorrect. Correct answer: ${correctAnswers[question]}</p>`;
                 }
             }
 
-            alert(`Your score: ${score} out of ${Object.keys(correctAnswers).length}`);
+            resultHtml += `<p>Total correct answers: ${correctCount}</p>`;
+            document.getElementById('result').innerHTML = resultHtml;
         }
+    
     </script>
-<p>
-   Planning and Organization: Task: You need to create a study
-  schedule for your upcoming exams. A) Planning and Organization B) Time
-  Management C) Emotional Regulation D) Flexibility Time Management: Task: You
-  have a project due in two weeks. What steps will you take each day to complete
-  it on time? A) Planning and Organization B) Time Management C) Working Memory
-  D) Self-Monitoring Working Memory: Task: Remembering your locker combination
-  without writing it down. A) Flexibility B) Emotional Regulation C) Working
-  Memory D) Time Management Self-Monitoring: Task: Checking your work to make
-  sure you haven’t made any mistakes. A) Emotional Regulation B) Flexibility C)
-  Time Management D) Self-Monitoring Emotional Regulation: Task: Taking deep
-  breaths and counting to ten when you feel angry or upset. A) Flexibility B)
-  Emotional Regulation C) Working Memory D) Planning and Organization
-  Flexibility: Task: Changing your plans when something unexpected happens. A)
-  Time Management B) Self-Monitoring C) Flexibility D) Emotional Regulation
-  Response Inhibition: Task: Not interrupting someone while they’re speaking. A)
-  Working Memory B) Self-Monitoring C) Emotional Regulation D) Response
-  Inhibition Task Initiation: Task: Starting your homework as soon as you get
-  home from school. A) Task Initiation B) Planning and Organization C) Time
-  Management D) Working Memory
-</p>
+<p class="results">How many correct answers did you get? If you got less than four questions correct, take the test again.
+</br>
+It is important that you understand what each skill is about. 
+</br>
+Only then you will be able to reflect on your performance on each of the skills and decide which one(s) you would like to improve.</p>ls</p>
+
   </body>
+  </html>
