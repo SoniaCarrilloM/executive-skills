@@ -339,8 +339,10 @@ thead {
     font-size: 12px;
   }
 
-  .section {
+  section {
     background-color: pink;
+    margin-right: 5%;
+    margin-left: 5%;
   }
 
   .boxes {
@@ -390,9 +392,5 @@ thead {
   }
   .responsive-table {
     overflow-x: auto;
-  }
-  section .grid {
-    margin-right: 5%;
-    margin-left: 5%;
   }
 }
