@@ -340,7 +340,7 @@ thead {
   }
 
   section {
-    background-color: white;
+    background-color: rgb(144, 227, 214);
     margin-right: 0;
     margin-left: 0;
   }
@@ -373,6 +373,7 @@ thead {
   }
   .grid {
     grid-template-columns: 1fr;
+    justify-content: center;
     padding: 15px auto;
     margin-left: 0;
     margin-right: 0;
