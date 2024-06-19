@@ -341,8 +341,8 @@ thead {
 
   section .grid {
     background-color: pink;
-    margin-right: 5%;
-    margin-left: 5%;
+    margin-right: 0;
+    margin-left: 0;
   }
 
   .boxes {
