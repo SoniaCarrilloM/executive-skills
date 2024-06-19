@@ -339,7 +339,7 @@ thead {
     font-size: 12px;
   }
 
-  section {
+  section .grid {
     background-color: pink;
     margin-right: 5%;
     margin-left: 5%;
