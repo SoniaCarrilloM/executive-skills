@@ -391,4 +391,8 @@ thead {
   .responsive-table {
     overflow-x: auto;
   }
+  .grid {
+    margin-right: 5%;
+    margin-left: 5%;
+  }
 }
