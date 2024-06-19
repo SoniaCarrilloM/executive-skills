@@ -375,6 +375,8 @@ thead {
     grid-template-columns: 1fr;
     justify-content: center;
     padding: 15px auto;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
   .gridFooter {
